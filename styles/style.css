@@ -113,7 +113,6 @@
 
 .digits{
   margin-top: 100px;
-  
 }
 
 .section-title{
@@ -123,7 +122,7 @@
   color: black;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .section-subtitle{
@@ -147,7 +146,6 @@
 
 .table__cell_digits{
   width: 250px;
-
 }
 
 .table__cell-heading{
@@ -174,7 +172,7 @@
   background-image: url(../images/feynman.png);
   position: relative;
   width: 867px;
-  height: 637px; 
+  height: 637px;
   bottom: 0;
   left: 0;
 }
@@ -222,7 +220,7 @@
   width: 877px;
   height: 877px;
   background-position: center;
-  background-size: contain; 
+  background-size: contain;
   position: absolute;
   right: -210px;
   top:0;
