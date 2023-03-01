@@ -53,7 +53,7 @@
   background-image: url(../images/header-image.png);
   position: absolute;
   width: 765px;
-  height: 608px; 
+  height: 608px;
   bottom: 0;
   right: 0;
   background-size: cover;
@@ -65,7 +65,7 @@
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
-  background-size: cover; 
+  background-size: cover;
   position: absolute;
 }
 
@@ -75,7 +75,7 @@
 
 .two-columns{
   display: flex;
-  width: 80%; 
+  width: 80%;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -98,7 +98,6 @@
   font-size: 24px;
   font-weight: normal;
   min-width: 784px;
-  line-height: 30px;
   width: 80%;
   margin: 5% auto;
   margin-top: 0;
