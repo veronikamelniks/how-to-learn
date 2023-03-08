@@ -226,7 +226,7 @@
 .feynman_link{
   position: absolute;
   top: 50%;
-  right: 0x;
+  right: 0;
   padding-right: 48px;
   line-height: 51px;
   font-size: 36px;
