@@ -33,7 +33,7 @@
 
 .header__title{
   max-width: 730px;
-  margin: 0 0 0 64px; /*Необходимо обнулить лишний браузерный margin с других сторон*/
+  margin: 0 0 0 64px;
   color: #000000;
   font-size: 102px;
   font-weight: 600;
@@ -121,10 +121,9 @@
 }
 
 .two-columns__paragraph:first-of-type{
-  margin-top: 0
+  margin-top: 0;
 }
-/*правило не применяется, необходимо скорректировать селектор класса
-*/
+
 
 .two-columns__span-accent{
   line-height: 34px;
@@ -161,7 +160,7 @@
 
 .table{
   display: flex;
-  width: 1100px; 
+  width: 1100px;
   flex-flow: wrap;
   margin: 0 auto 100px auto;
   padding: 0;
@@ -247,7 +246,7 @@
 .section-title_theme-dark{
   justify-content: center;
   display: flex;
-  width: 60%; 
+  width: 60%;
   color:#f2f2f2;
   margin: 0 auto 0 auto;
 }
@@ -327,7 +326,7 @@
 
 .footer__column_content_copyright{
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-direction: column;
   flex-basis: 711px;
 
@@ -352,8 +351,6 @@
   font-weight: 600;
   color: #f2f2f2;
   margin: 0;
-  /*необходимо обнулить лишний браузерный margin
-согласно брифу отступ необходим только между заголовком и списком ссылок, при применении flex-построения необходимо учесть, что отступ между ними не должен задваиватся */
 }
 
 .footer__column-links{
