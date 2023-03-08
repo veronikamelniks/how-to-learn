@@ -19,13 +19,13 @@
 .logo{
   width: 228px;
   height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
 }
 
 .logo_place_header{
   background-image: url("../images/logo_place_header.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -33,16 +33,16 @@
 
 .header__title{
   max-width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px; /*Необходимо обнулить лишний браузерный margin с других сторон*/
   color: #000000;
   font-size: 102px;
   font-weight: 600;
-  z-index: 1;
+  z-index: 2;
   line-height: 96px;
 
 }
 
-.header__subtitles{
+.header__subtitle{
   max-width: 388px;
   bottom: 30px;
   left: 64px;
@@ -50,7 +50,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
 }
 
@@ -73,6 +73,8 @@
 
 
 .header__main-illustration{
+  width: 765px;
+  height: 608px;
   object-position: top;
   object-fit: cover;
   background-size: cover;
@@ -94,7 +96,7 @@
   justify-content: space-between;
 }
 
-.two-columns__brief-text{
+.two-columns__brief{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -105,6 +107,7 @@
 }
 
 .two-columns__main-text{
+  display: flex;
   min-width: 784px;
   width: 80%;
   flex-direction: column;
@@ -114,13 +117,14 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 30px auto;
-  margin-top: 0;
+  margin: 0 auto 30px auto;
 }
 
-two-columns__paragraph:last-child{
-  margin-bottom: 0;
+.two-columns__paragraph:first-of-type{
+  margin-top: 0
 }
+/*правило не применяется, необходимо скорректировать селектор класса
+*/
 
 .two-columns__span-accent{
   line-height: 34px;
@@ -129,11 +133,15 @@ two-columns__paragraph:last-child{
 }
 
 .digits{
-  margin-top: 100px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.digits__section_title{
-  margin: 0 auto 0 auto;
+.section-title{
+  margin: 0;
+  padding-bottom: 20px;
   text-align: center;
   width: 60%;
   color: #000000;
@@ -142,8 +150,8 @@ two-columns__paragraph:last-child{
   font-weight: 600;
 }
 
-.digits__section_subtitle{
-  margin: 20px auto 0 auto;
+.section-subtitle{
+  margin: 0;
   text-align: center;
   width: 60%;
   line-height: 34px;
@@ -151,24 +159,29 @@ two-columns__paragraph:last-child{
   font-weight: normal;
 }
 
-.table_digits{
+.table{
   display: flex;
-  max-width: 1100px;
+  width: 1100px; 
   flex-flow: wrap;
-  margin: auto;
+  margin: 0 auto 100px auto;
+  padding: 0;
 }
 
 .table__cell{
   width: 250px;
   margin-top: 60px;
-  margin-left: 60px;
-  list-style: none;
+  /*тут по комментарию прошлого ревью не совсем понятно,т.к. по брифу я вижу что перед блоками и заголовками есть расстояние 60px
+*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
 }
 
 .table__text{
@@ -178,19 +191,20 @@ two-columns__paragraph:last-child{
   font-weight: normal;
 }
 
-.feyman{
-  margin-top: 100px;
+.feynman{
+  padding-top: 100px;
   background: url(../images/feynman.png);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: 867px 637px;
-  background-position: bottom left;
+  background-position: left bottom;
+  box-sizing: border-box;
   position: relative;
   min-height: 890px;
 }
 
 
-.feyman__title{
+.feynman__title{
   max-width: 648px;
   vertical-align: center;
   color:#000000;
@@ -201,7 +215,7 @@ two-columns__paragraph:last-child{
   text-align: center;
 }
 
-.feyman__subtitle{
+.feynman__subtitle{
   color: #000000;
   line-height: 51px;
   font-size: 36px;
@@ -210,66 +224,55 @@ two-columns__paragraph:last-child{
   text-align: center;
 }
 
-.feyman_link{
+.feynman_link{
   position: absolute;
   top: 50%;
-  right: 48px;
+  right: 0x;
+  padding-right: 48px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none; 
 }
 
 .kaufman{
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding: 90px 0 90px;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
-.section-title_theme_dark{
-  max-width: 60%;
-  display: flex;
-  color:#f2f2f2;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-  margin-bottom: 0;
+.section-title_theme-dark{
   justify-content: center;
-  z-index: 1;
+  display: flex;
+  width: 60%; 
+  color:#f2f2f2;
+  margin: 0 auto 0 auto;
 }
 
 .section-subtitle_theme_dark{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 0;
   color:#f2f2f2;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  z-index: 1;
 }
 
-.table__theme_dark{
-  display: flex;
+.table_theme_dark{
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
   color:#f2f2f2;
-  z-index: 1;
+  z-index: 2;
 }
+
 
 .table__cell_theme_dark{
   width: 200px;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 1;
 }
 
 .table__heading_theme_dark{
@@ -277,36 +280,35 @@ two-columns__paragraph:last-child{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  z-index: 1;
+  margin: 0;
 }
 
 .table__text_theme_dark{ 
-  color: white;
+  color: #f2f2f2;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
-  z-index: 1;
 }
 
 .kaufman__triangle{
   background-image: url(../images/kaufman-triangle.svg);
-  overflow: hidden;
   width: 877px;
   height: 877px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   right: -210px;
   top:0;
-  z-index: 0;
+  z-index: -1;
 }
+
 
 .footer{
   box-sizing: border-box;
   min-height: 350px;
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
   display: flex;
@@ -319,66 +321,58 @@ two-columns__paragraph:last-child{
   display: flex;
   width: 90%;
   justify-content: space-between;
-  margin:auto;
+  margin: 0 auto 0 auto;
 }
 
-.footer__columns_content_copyright{
+.footer__column_content_copyright{
   display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
   flex-basis: 711px;
 
 }
 
 .logo_place_footer{
   background-image: url("../images/logo_place_footer.svg");
-  position: relative;
-  width: 228px;
-  height: 32px;
-  top: 30px;
-  left: 64px;
+
 }
 
 .footer__author{
-  left: 0;
-  bottom: 0;
   color: #f2f2f2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  padding: 18px 0 18px 64px;
+  margin: 18px 0 18px 0px;
 }
 
 .footer__column-heading{
-  top: 30px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
   color: #f2f2f2;
-  margin: 30px 150px auto auto;
+  margin: 0;
+  /*необходимо обнулить лишний браузерный margin
+согласно брифу отступ необходим только между заголовком и списком ссылок, при применении flex-построения необходимо учесть, что отступ между ними не должен задваиватся */
 }
 
 .footer__column-links{
   list-style-type: none;
   margin: 0;
+  padding: 20px 0 16px 0;
 }
 
-ul{
-  list-style-type: none;
-}
 
 .footer__column-link{
   text-decoration: none;
-  margin-top: 20px;
   color: #f2f2f2;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__column-icon{
-  padding-right: 10px;
+.footer__social-icon{
   width: 16px;
   height: 16px;
-  padding: 0;
   margin-right: 10px;
 }
 
