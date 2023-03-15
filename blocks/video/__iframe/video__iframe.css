@@ -1,0 +1,8 @@
+@import url(../../../pages/index.css);
+
+.video__iframe{
+    margin-right:20px;
+    width: 515px;
+    height: 316px;
+    border-style: none;
+  }

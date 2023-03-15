@@ -1,4 +1,4 @@
-@import url(../../styles/style.css);
+@import url(../../../pages/index.css);
 
 .table_theme_dark{
     flex-wrap: wrap;

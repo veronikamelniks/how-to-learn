@@ -1,0 +1,9 @@
+@import url(../../../pages/index.css);
+
+.cards{
+    display: flex;
+    min-width: 920px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }

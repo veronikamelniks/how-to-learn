@@ -1,7 +1,4 @@
-@import url(../styles/style.css);
-
-
-
+@import url(../../pages/index.css);
 
 .table{
     display: flex;

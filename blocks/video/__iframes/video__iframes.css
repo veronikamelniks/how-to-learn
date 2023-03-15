@@ -1,0 +1,9 @@
+@import url(../../../pages/index.css);
+
+.video__iframes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 50px auto -50px auto;
+  }
