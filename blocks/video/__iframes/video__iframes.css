@@ -1,5 +1,3 @@
-@import url(../../../pages/index.css);
-
 .video__iframes{
     display: flex;
     flex-direction: row;
