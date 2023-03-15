@@ -1,0 +1,10 @@
+@import url(../../styles/style.css);
+
+
+.footer__column-link{
+    text-decoration: none;
+    color: #f2f2f2;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+  }

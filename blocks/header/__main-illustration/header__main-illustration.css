@@ -1,0 +1,12 @@
+@import url(../../styles/style.css);
+
+.header__main-illustration{
+    width: 765px;
+    height: 608px;
+    object-position: top;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }

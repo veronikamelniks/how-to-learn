@@ -1,0 +1,8 @@
+@import url(../../../../../styles/style.css);
+
+.two-columns__main-text{
+    display: flex;
+    min-width: 784px;
+    width: 80%;
+    flex-direction: column;
+  }

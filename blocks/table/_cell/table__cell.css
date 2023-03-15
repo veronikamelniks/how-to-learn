@@ -1,0 +1,10 @@
+@import url(../../styles/style.css);
+
+
+.table__cell{
+    width: 250px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }

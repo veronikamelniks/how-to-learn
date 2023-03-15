@@ -1,0 +1,12 @@
+@import url(../../../../styles/style.css);
+
+.khan__buy_link{
+    position: absolute;
+    text-decoration: none;
+    margin-left: 48px;
+    color: #2f80ed;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+   
+  }

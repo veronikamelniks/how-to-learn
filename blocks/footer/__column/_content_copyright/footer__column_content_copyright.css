@@ -1,0 +1,9 @@
+@import url(../../../../styles/style.css);
+
+.footer__column_content_copyright{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 711px;
+  }
+  

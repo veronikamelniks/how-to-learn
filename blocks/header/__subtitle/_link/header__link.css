@@ -1,0 +1,6 @@
+@import url(../../../styles/style.css);
+
+.header__link{
+    text-decoration: none;
+    color: #2f80ed;
+  }

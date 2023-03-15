@@ -1,0 +1,14 @@
+@import url(../styles/style.css);
+
+
+
+
+.table{
+    display: flex;
+    width: 1100px;
+    flex-flow: wrap;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+  }

@@ -1,0 +1,11 @@
+@import url(../../styles/style.css);
+
+.header__title{
+    max-width: 730px;
+    margin: 0 0 0 64px;
+    color: #000000;
+    font-size: 102px;
+    font-weight: 600;
+    z-index: 2;
+    line-height: 96px;
+  }
