@@ -1,7 +1,8 @@
 .cards{
-    display: flex;
-    min-width: 920px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    width: 920px;
+    list-style: none;
+    grid-column-gap: 100px;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
