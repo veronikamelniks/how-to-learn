@@ -3,3 +3,6 @@
     height: 38px;
   }
     
+.resources__logo:hover {
+    opacity: 0.6;
+  }  
